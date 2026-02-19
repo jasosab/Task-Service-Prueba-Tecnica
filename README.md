@@ -24,7 +24,9 @@ RxJS para el manejo de flujos asíncronos y errores
 1. Base de Datos (Oracle PL/SQL)
 
 Antes de iniciar el backend, se deben ejecutar los scripts para crear la tabla TASKS y el paquete TASK_PKG:
+
 Atributos de Tabla: TASK_ID (PK), TITLE, DESCRIPTION, COMPLETED, CREATED_AT y UPDATED_AT.
+
 Paquete: TASK_PKG incluye procedimientos para GET_ALL_TASKS, GET_TASK_BY_ID, CREATE_TASK, UPDATE_TASK y DELETE_TASK.
 
 
@@ -37,8 +39,11 @@ Desplegar el proyecto en un contenedor Apache Tomcat (puerto predeterminado 8080
 Endpoints expuestos: 
 
 GET /api/tasks - Lista todas las tareas.
+
 POST /api/tasks - Crea una nueva tarea.
+
 PUT /api/tasks/{id} - Actualiza una tarea.
+
 DELETE /api/tasks/{id} - Elimina una tarea.
 
 3. Frontend (Angular) 
@@ -66,4 +71,5 @@ Manejo de Estados: Implementación de códigos de estado HTTP correctos (201 Cre
 📁 Estructura del Código
 
 /backend: Contiene el código Java (Servlets, DAO, Modelos) y scripts SQL.
+
 /frontend: Contiene la aplicación Angular (Componentes, Servicios, Modelos).
